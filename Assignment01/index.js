@@ -1,5 +1,4 @@
-//import findage from '';
-//import express from 'express';
+
 const express = require('express');
 
 const app = express();
@@ -25,10 +24,7 @@ app.post('/calcage', (req, res) => {
     ageMonths,
     ageDays
   }
-  console.log(ageMonths);
-
   res.render('index', { data: data });
-
 });
 
 app.listen(4444, () => {
